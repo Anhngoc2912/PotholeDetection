@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/Theme.Material3.Light"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Dashboard"
+                style="@style/titile" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/green" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="10"
+                    android:textColor="@color/orange"
+                    android:background="@drawable/cus_textview"
+                    app:backgroundTint="@null"
+                    android:elevation="3dp"/>
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="20"
+                    android:textColor="@color/orange"
+                    android:background="@drawable/cus_textview"
+                    app:backgroundTint="@null"
+                    android:elevation="3dp"/>
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="30"
+                    android:textColor="@color/orange"
+                    android:background="@drawable/cus_textview"
+                    app:backgroundTint="@null"
+                    android:elevation="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_weight="1"
+                    android:id="@+id/pieChart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:layout_weight="1.5"
+                    android:id="@+id/lineChart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_weight="5.5"
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

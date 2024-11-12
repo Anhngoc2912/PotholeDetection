@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Pothole Detection</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="bottom_home">Home</string>
+    <string name="bottom_user">Account</string>
+    <string name="bottom_dashboard">Dashboard</string>
+    <string name="bottom_setting">Setting</string>
+    <string name="Decription">Hole Alert is an app that detects potholes around VietNam National University, HCMC, helping users avoid bumpy roads.</string>
+    <string name="welcome">Welcome!</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="decript2">Please sign in to your exiting account</string>
+    <string name="remember">Remember me</string>
+    <string name="forgotpassword">Forgot password</string>
+    <string name="forgotpassword2">FORGOT PASSWORD</string>
+    <string name="decript3">Sign up to use the app or register with Facebook or Google</string>
+    <string name="setting">Settings</string>
+    <string name="language">Language</string>
+    <string name="infor">Account &amp; Security</string>
+    <string name="Notification_Settings">Notification Settings</string>
+    <string name="myprofile">My profile</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="editpro">Edit profile</string>
+    <string name="Myaccount">My account</string>
+    <string name="Settings">Settings</string>
+    <string name="Support">Support</string>
+    <string name="About">About</string>
+    <string name="HelpCentre">Help Centre</string>
+    <string name="Logout">Logout</string>
+    <string name="UserProfile">User Profile</string>
+    <string name="Changeyouravatar">Change your avatar</string>
+    
+    <string name="Fullname">FULL NAME</string>
+    <string name="Email">EMAIL</string>
+    <string name="Newpassword">NEW PASSWORD</string>
+    <string name="Confirmpass">CONFIRM PASSWORD</string>
+    <string name="Save">Save</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="Password">Password</string>
+    <string name="Password2"> CURRENT PASSWORD</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pothole Detection</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="bottom_home">Nhà</string>
+    <string name="bottom_user">Tôi</string>
+    <string name="bottom_dashboard">Trang chủ</string>
+    <string name="bottom_setting">Cài đặt</string>
+    <string name="Decription">Hole Alert là ứng dụng phát hiện ổ gà xung quanh Đại học Quốc gia TP.HCM, giúp người dùng tránh những đoạn đường gập ghềnh.</string>
+    <string name="welcome">Xin chào!</string>
+    <string name="signin">ĐĂNG NHẬP</string>
+    <string name="signup">ĐĂNG KÝ</string>
+    <string name="or_continue_with">Tiếp tục với</string>
+    <string name="decript2">Vui lòng đăng nhập vào tài khoản đang có của bạn</string>
+    <string name="remember">Lưu tài khoản</string>
+    <string name="forgotpassword">Quên mật khẩu</string>
+    <string name="forgotpassword2">QUÊN MẬT KHẨU</string>
+    <string name="decript3">Đăng ký để sử dụng ứng dụng hoặc đăng ký với Facebook hoặc Google</string>
+    <string name="setting">Cài đặt</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="infor">Tài khoản &amp; Bảo mật</string>
+    <string name="Notification_Settings">Cài đặt thông báo</string>
+    <string name="myprofile">Hồ sơ của tôi</string>
+    <string name="email">Email</string>
+    <string name="phone">Điện thoại</string>
+    <string name="ChangePassword">Đổi mật khẩu</string>
+    <string name="editpro">Sửa Hồ sơ</string>
+    <string name="Myaccount">Tài khoản của tôi</string>
+    <string name="Settings">Cài đặt</string>
+    <string name="Support">Hỗ trợ</string>
+    <string name="About">Giới thiệu</string>
+    <string name="HelpCentre">Trung tâm hỗ trợ</string>
+    <string name="Logout">Đăng xuất</string>
+    <string name="UserProfile">Hồ sơ</string>
+    <string name="Changeyouravatar">Đổi ảnh đại diện</string>
+    <string name="Fullname">TÊN</string>
+    <string name="Email">EMAIL</string>
+    <string name="Newpassword">MẬT KHẨU MỚI</string>
+    <string name="Confirmpass">XÁC NHẬN MẬT KHẨU</string>
+    <string name="Save">Lưu</string>
+    <string name="Dashboard">Trang chủ</string>
+    <string name="Password">Mật khẩu</string>
+    <string name="Password2">MẬT KHẨU CŨ</string>
+</resources>

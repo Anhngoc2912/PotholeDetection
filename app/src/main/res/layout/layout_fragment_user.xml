@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:layout_scrollFlags="scroll|enterAlways"> <!--khi NestedScrollView cuộn thì ẩn toolbar-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/Theme.Material3.Light"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                style="@style/titile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/UserProfile" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/green"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"> <!--khi NestedScrollView cuộn lên thì ẩn toolbar-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#9FFFFFFF" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/outline_account_circle_24" />
+
+                <TextView
+                    android:id="@+id/change_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avatar"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="@string/Changeyouravatar"
+                    android:textColor="@color/red" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/green"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:fillViewport="true"
+                android:layout_weight="7">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Fullname"
+                        android:textColor="@color/green"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/edt_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tag1"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/cus_edt2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="Nguyen Thi Ngoc Anh"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_Name"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Password2"
+                        android:textColor="@color/green"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/edt_Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tag2"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/cus_edt2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:inputType="textPassword"
+                        android:text="123"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tag3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_Password"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Newpassword"
+                        android:textColor="@color/green"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/edt_newpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tag3"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/cus_edt2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:inputType="textPassword"
+                        android:text="123456"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tag4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_newpass"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/green"
+                        android:text="@string/Confirmpass"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/edt_confirmpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tag4"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/cus_edt2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:inputType="textPassword"
+                        android:text="123456"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cus_btn_yellow"
+                        app:backgroundTint="@null"
+                        android:text="@string/Save"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:layout_below="@id/edt_confirmpass"
+                        android:layout_marginTop="60dp" />
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
